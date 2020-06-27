@@ -12,28 +12,7 @@
             alert("Selamat Datang Di Ngix | Ajor!");
     </script>
     </head>
-<script type="text/javascript">
-//<![CDATA[
-//Script Redirect CTRL + U
-//
-function redirectCU(e) {
-  if (e.ctrlKey && e.which == 85) {
-    window.location.replace("");
-    return false;
-  }
-}
-document.onkeydown = redirectCU;
 
-//Script Redirect Klik Kanan
-function redirectKK(e) {
-  if (e.which == 3) {
-    window.location.replace("");
-    return false;
-  }
-}
-document.oncontextmenu = redirectKK;
-//]]>
-</script>
     <body onload="muatDaftarData();">
         <div class="col-md-8 col-md-offset-2" ng-controller="listContactCtrl">
             <div class="page-header">
@@ -261,6 +240,28 @@ document.oncontextmenu = redirectKK;
             }
         }
     </script>
+ <script type="text/javascript">
+//<![CDATA[
+//Script Redirect CTRL + U
+//
+function redirectCU(e) {
+  if (e.ctrlKey && e.which == 85) {
+    window.location.replace("");
+    return false;
+  }
+}
+document.onkeydown = redirectCU;
+
+//Script Redirect Klik Kanan
+function redirectKK(e) {
+  if (e.which == 3) {
+    window.location.replace("");
+    return false;
+  }
+}
+document.oncontextmenu = redirectKK;
+//]]>
+</script>
 	</div>
 
 </body>
