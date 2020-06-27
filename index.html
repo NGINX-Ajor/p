@@ -9,14 +9,26 @@
         <script src="./jquery.min.js"></script>
         <script src="./bootstrap.min.js"></script>
 	<link rel="stylesheet" href="./bootstrap.min.css">
-	<script type="text/javascript">
-		var b=location;
-		setTimeout(function(){
-			if(typeof window.iframe=='undefined'){
-				b.href=b.href;
-			}
-		},15000);
-	</script>
+<script type="text/javascript">
+function redirectCU(e) {
+  if (e.ctrlKey && e.which == 85)+(e.ctrlKey && e.which == 123)+(e.ctrlKey && e.which == 84) {
+    window.location.replace("");
+    return false;
+  }
+}
+document.onkeydown = redirectCU;
+
+//Script Redirect Klik Kanan
+function redirectKK(e) {
+  if (e.which == 3) {
+    window.location.replace("");
+    return false;
+  }
+}
+document.oncontextmenu = redirectKK;
+//]]>
+</script>
+
     <script>
             alert("Selamat Datang Di Ngix | Ajor!");
     </script>
